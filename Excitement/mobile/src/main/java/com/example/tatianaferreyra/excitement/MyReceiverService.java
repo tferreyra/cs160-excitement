@@ -22,6 +22,7 @@ public class MyReceiverService extends WearableListenerService {
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
         Log.i(TAG, "Got a message");
+
     }
 
 }

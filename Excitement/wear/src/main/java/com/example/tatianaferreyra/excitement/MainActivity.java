@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-//        mSensorManager.registerListener((SensorEventListener) this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener((SensorEventListener) this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
 
@@ -79,9 +79,8 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     public void presentExcitement() {
         Log.d(TAG, "excitement: check");
-        Intent viewIntent = new Intent(this, MainActivity.class);
+        Intent viewIntent = new Intent(this, camera.class);
         //Intent viewIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //viewIntent.putExtra("send", "message");
         PendingIntent viewPendingIntent =
                 PendingIntent.getActivity(this, 0, viewIntent, 0);
 
