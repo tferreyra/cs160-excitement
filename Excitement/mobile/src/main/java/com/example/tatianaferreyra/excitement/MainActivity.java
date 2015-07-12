@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
 
     public void createTweet(Uri image) {
          Intent x = new TweetComposer.Builder(this)
-            .text("#cs160excitement").image(image).createIntent();
+            .text("#cs160excited").image(image).createIntent();
          startActivityForResult(x, REQUEST_TWITTER_COMPOSER);
     }
 
