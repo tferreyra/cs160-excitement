@@ -38,8 +38,8 @@ import io.fabric.sdk.android.Fabric;
 public class MainActivity extends Activity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "ftsoW7N5sNUnoZGCiqoF1oit5";
-    private static final String TWITTER_SECRET = "1O2m46RLzQATZL1KdgzzfSJ48ONp749D4t3bGymmR1xlOtIuJT";
+    private static final String TWITTER_KEY = "REMOVED";
+    private static final String TWITTER_SECRET = "REMOVED";
     public static final int REQUEST_TWITTER_COMPOSER = 500;
     public static final int CAMERA_REQUEST = 10;
 
